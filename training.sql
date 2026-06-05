@@ -1,0 +1,1 @@
+SELECT * from data_jobs.job_postings_fact;
