@@ -51,3 +51,16 @@ RENAME COLUMN preferred_roles TO priority_lvl;
 
 ALTER TABLE jobs_mart.staging.priority_roles
 ALTER COLUMN priority_lvl TYPE INTEGER  ;
+
+UPDATE staging.priority_roles
+SET priority_lvl = 3
+WHERE role_id IN (1,4);
+
+
+
+-- CTA's are actual tables that store data physically in the database. They can be queried, updated, and manipulated like any other table.
+-- VIEWS are virtual tables that are created by a query and do not store data physically. They are used to simplify complex queries and provide a way to encapsulate logic.
+-- TEMP TABLES are temporary tables that are created for the duration of a session and are automatically dropped when the session ends. They are used to store intermediate results or temporary data that is needed for a specific query or operation.
+
+
+

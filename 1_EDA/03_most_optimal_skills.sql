@@ -2,7 +2,7 @@
 
 /*SHOW TABLES;
 
-DESCRIBE job_postings_fact;
+DESCRIBE job_postings_fact; -  SELECT * FROM information_schema."columns" WHERE table_name = 'job_postings_fact';
 
 DESCRIBE skills_dim;
 
